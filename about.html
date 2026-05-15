@@ -44,6 +44,45 @@
         .bg-primary-600.text-gray-600 {
             color: white !important;
         }
+
+        /* Department glass card */
+        .dept-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(18px) saturate(150%);
+            -webkit-backdrop-filter: blur(18px) saturate(150%);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow:
+                0 8px 32px rgba(0, 105, 112, 0.12),
+                0 0 60px rgba(0, 105, 112, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            transition: box-shadow 0.4s ease, transform 0.4s ease, border-color 0.4s ease;
+        }
+
+        .dept-card:hover {
+            box-shadow:
+                0 12px 40px rgba(0, 105, 112, 0.22),
+                0 0 80px rgba(0, 105, 112, 0.18),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            border-color: rgba(0, 105, 112, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .dark .dept-card {
+            background: rgba(30, 31, 35, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow:
+                0 8px 32px rgba(0, 105, 112, 0.18),
+                0 0 60px rgba(0, 105, 112, 0.12),
+                inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        }
+
+        .dark .dept-card:hover {
+            box-shadow:
+                0 12px 40px rgba(0, 105, 112, 0.3),
+                0 0 90px rgba(0, 105, 112, 0.25),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border-color: rgba(0, 105, 112, 0.5);
+        }
     </style>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
@@ -1393,14 +1432,17 @@ bg-primary-600 text-gray-600 py-2 px-5">
         <div class="w-full pt-20 | lg:pt-24 | 2xl:pt-32 | 4xl:pt-40">
             <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
                 <!-- Departments Highlights Row -->
-                <div class="w-full pb-16 lg:pb-24 mb-16 lg:mb-24 border-b border-gray-200 dark:border-grayDark-400">
-                    <div class="inline-flex items-center space-x-2 w-auto mb-8">
+                <div class="w-full pb-16 lg:pb-24 mb-16 lg:mb-24 border-b border-gray-200 dark:border-grayDark-400 relative overflow-hidden">
+                    <!-- Decorative gradient blobs for glass effect background -->
+                    <div class="pointer-events-none absolute -top-20 -left-10 w-80 h-80 rounded-full opacity-40 blur-3xl" style="background: radial-gradient(circle, #006970 0%, transparent 70%);"></div>
+                    <div class="pointer-events-none absolute -bottom-20 -right-10 w-96 h-96 rounded-full opacity-30 blur-3xl" style="background: radial-gradient(circle, #006970 0%, transparent 70%);"></div>
+                    <div class="inline-flex items-center space-x-2 w-auto mb-8 relative z-10">
                         <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
                         <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
                             Our departments</div>
                     </div>
-                    <div class="grid grid-cols-1 gap-6 | lg:grid-cols-2 lg:gap-8 relative z-10">
-                        <div class="relative flex flex-col p-6 rounded-2xl bg-gray-100 border border-gray-200 | lg:p-8 lg:rounded-3xl | dark:bg-grayDark-500 dark:border-grayDark-400 group transition-colors | xl:hover:border-primary-600">
+                    <div class="grid grid-cols-1 | lg:grid-cols-2 relative z-10" style="gap: 2.5rem;">
+                        <div class="dept-card relative flex flex-col p-6 rounded-2xl group | lg:p-8 lg:rounded-3xl">
                             <div class="inline-flex items-center mb-4">
                                 <span class="inline-block bg-primary-600 text-white text-xs font-light tracking-widest uppercase px-3 py-1 rounded-full">Department 01</span>
                             </div>
@@ -1424,7 +1466,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                     positive change in the world of technology.</p>
                             </div>
                         </div>
-                        <div class="relative flex flex-col p-6 rounded-2xl bg-gray-100 border border-gray-200 | lg:p-8 lg:rounded-3xl | dark:bg-grayDark-500 dark:border-grayDark-400 group transition-colors | xl:hover:border-primary-600">
+                        <div class="dept-card relative flex flex-col p-6 rounded-2xl group | lg:p-8 lg:rounded-3xl">
                             <div class="inline-flex items-center mb-4">
                                 <span class="inline-block bg-primary-600 text-white text-xs font-light tracking-widest uppercase px-3 py-1 rounded-full">Department 02</span>
                             </div>
