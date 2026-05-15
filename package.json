@@ -4,7 +4,10 @@
   "private": true,
   "description": "ALDTAN - Software Development Company Website",
   "scripts": {
-    "dev": "npx serve -l 3000",
-    "start": "npx serve -l 3000"
+    "dev": "browser-sync start --config bs-config.js",
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
   }
 }
