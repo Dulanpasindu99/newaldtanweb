@@ -44,6 +44,45 @@
         .bg-primary-600.text-gray-600 {
             color: white !important;
         }
+
+        /* Department glass card */
+        .dept-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(18px) saturate(150%);
+            -webkit-backdrop-filter: blur(18px) saturate(150%);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow:
+                0 8px 32px rgba(0, 105, 112, 0.12),
+                0 0 60px rgba(0, 105, 112, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            transition: box-shadow 0.4s ease, transform 0.4s ease, border-color 0.4s ease;
+        }
+
+        .dept-card:hover {
+            box-shadow:
+                0 12px 40px rgba(0, 105, 112, 0.22),
+                0 0 80px rgba(0, 105, 112, 0.18),
+                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            border-color: rgba(0, 105, 112, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .dark .dept-card {
+            background: rgba(30, 31, 35, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow:
+                0 8px 32px rgba(0, 105, 112, 0.18),
+                0 0 60px rgba(0, 105, 112, 0.12),
+                inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        }
+
+        .dark .dept-card:hover {
+            box-shadow:
+                0 12px 40px rgba(0, 105, 112, 0.3),
+                0 0 90px rgba(0, 105, 112, 0.25),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border-color: rgba(0, 105, 112, 0.5);
+        }
     </style>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
@@ -1393,60 +1432,62 @@ bg-primary-600 text-gray-600 py-2 px-5">
         <div class="w-full pt-20 | lg:pt-24 | 2xl:pt-32 | 4xl:pt-40">
             <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
                 <!-- Departments Highlights Row -->
-                <div class="w-full pb-16 lg:pb-24 mb-16 lg:mb-24 border-b border-gray-200 dark:border-grayDark-400">
-                    <div class="inline-flex items-center space-x-2 w-auto mb-8">
+                <div class="w-full pb-16 lg:pb-24 mb-16 lg:mb-24 border-b border-gray-200 dark:border-grayDark-400 relative overflow-hidden">
+                    <!-- Decorative gradient blobs for glass effect background -->
+                    <div class="pointer-events-none absolute -top-20 -left-10 w-80 h-80 rounded-full opacity-40 blur-3xl" style="background: radial-gradient(circle, #006970 0%, transparent 70%);"></div>
+                    <div class="pointer-events-none absolute -bottom-20 -right-10 w-96 h-96 rounded-full opacity-30 blur-3xl" style="background: radial-gradient(circle, #006970 0%, transparent 70%);"></div>
+                    <div class="inline-flex items-center space-x-2 w-auto mb-8 relative z-10">
                         <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
                         <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
                             Our departments</div>
                     </div>
-                    <div class="flex flex-wrap items-start justify-between relative z-10">
-                        <div
-                            class="px-2 | lg:px-3 | xl:px-4 relative w-full flex flex-col mb-12 | lg:mb-0 lg:w-9/16 | 4xl:w-8/16">
-                            <div class="w-full relative lg:pr-16">
-                                <h3 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-sans-primary tracking-tight leading-none text-gray-600 dark:text-grayDark-100 js-cursor-trigger-drag inline-block mb-6"
-                                    data-icon="arrow-up-right">
-                                    ALDTAN IT
-                                </h3>
-                                <div
-                                    class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary font-light leading-7 flex flex-col gap-6">
-                                    <p>ALDTANÎ“Ã‡Ã–s Web Development Team is a dynamic group of talented individuals
-                                        dedicated to driving innovation, excellence, and success in the ever-evolving
-                                        world of technology. Comprising skilled professionals from diverse backgrounds,
-                                        our team is committed to leveraging cutting-edge technologies and best practices
-                                        to deliver exceptional solutions that meet the needs of our clients and
-                                        customers. The Web Development Team specialize in developing comprehensive
-                                        web-based solutions, including advanced POS Systems, Vehicle Valuation
-                                        Platforms, School Management Systems, QR-based Systems and Tailored Patient
-                                        Management Systems for small clinics, etc.</p>
-                                    <p>With a shared vision, passion for innovation, and commitment to excellence,
-                                        ALDTANÎ“Ã‡Ã–s Development Team is poised to achieve great things and drive
-                                        positive
-                                        change in the world of technology.</p>
-                                </div>
+                    <div class="grid grid-cols-1 | lg:grid-cols-2 relative z-10" style="gap: 2.5rem;">
+                        <div class="dept-card relative flex flex-col p-6 rounded-2xl group | lg:p-8 lg:rounded-3xl">
+                            <div class="inline-flex items-center mb-4">
+                                <span class="inline-block bg-primary-600 text-white text-xs font-light tracking-widest uppercase px-3 py-1 rounded-full">Department 01</span>
+                            </div>
+                            <h3 class="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-sans-primary tracking-tight leading-none text-gray-600 dark:text-grayDark-100 js-cursor-trigger-drag inline-block mb-6"
+                                data-icon="arrow-up-right">
+                                ALDTAN IT
+                            </h3>
+                            <div
+                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary font-light leading-7 flex flex-col gap-4">
+                                <p>ALDTAN's Web Development Team is a dynamic group of talented individuals
+                                    dedicated to driving innovation, excellence, and success in the ever-evolving
+                                    world of technology. Comprising skilled professionals from diverse backgrounds,
+                                    our team is committed to leveraging cutting-edge technologies and best practices
+                                    to deliver exceptional solutions that meet the needs of our clients and
+                                    customers. The Web Development Team specialize in developing comprehensive
+                                    web-based solutions, including advanced POS Systems, Vehicle Valuation
+                                    Platforms, School Management Systems, QR-based Systems and Tailored Patient
+                                    Management Systems for small clinics, etc.</p>
+                                <p>With a shared vision, passion for innovation, and commitment to excellence,
+                                    ALDTAN's Development Team is poised to achieve great things and drive
+                                    positive change in the world of technology.</p>
                             </div>
                         </div>
-                        <div class="px-2 | lg:px-3 | xl:px-4 relative w-full flex flex-col | lg:w-7/16">
-                            <div class="w-full relative xl:pr-10">
-                                <h3 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-sans-primary tracking-tight leading-none text-gray-600 dark:text-grayDark-100 js-cursor-trigger-drag inline-block mb-6"
-                                    data-icon="arrow-up-right">
-                                    ALDTAN Engineering
-                                </h3>
-                                <div
-                                    class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary font-light leading-7 flex flex-col gap-6">
-                                    <p>ALDTAN Engineering is a leading provider of engineering solutions, specializing
-                                        in a wide range of services including Digital Twinning, Industrial Automation
-                                        Solutions, Control Systems Implementation, import and installation services, and
-                                        Extended Reality (XR) services. HereÎ“Ã‡Ã–s an overview of ALDTAN
-                                        EngineeringÎ“Ã‡Ã–s
-                                        expertise in each area: Industrial Automation Solutions</p>
-                                    <p>ALDTAN Engineering offers a comprehensive range of industrial automation
-                                        solutions to enhance efficiency, productivity, and safety in manufacturing and
-                                        industrial processes. Our automation solutions encompass programmable logic
-                                        controllers (PLCs), human-machine interfaces (HMIs), supervisory control and
-                                        data acquisition (SCADA) systems, robotics, and more. We design, implement, and
-                                        optimize automation systems to streamline operations, reduce downtime, and
-                                        improve overall performance.</p>
-                                </div>
+                        <div class="dept-card relative flex flex-col p-6 rounded-2xl group | lg:p-8 lg:rounded-3xl">
+                            <div class="inline-flex items-center mb-4">
+                                <span class="inline-block bg-primary-600 text-white text-xs font-light tracking-widest uppercase px-3 py-1 rounded-full">Department 02</span>
+                            </div>
+                            <h3 class="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-sans-primary tracking-tight leading-none text-gray-600 dark:text-grayDark-100 js-cursor-trigger-drag inline-block mb-6"
+                                data-icon="arrow-up-right">
+                                ALDTAN Engineering
+                            </h3>
+                            <div
+                                class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary font-light leading-7 flex flex-col gap-4">
+                                <p>ALDTAN Engineering is a leading provider of engineering solutions, specializing
+                                    in a wide range of services including Digital Twinning, Industrial Automation
+                                    Solutions, Control Systems Implementation, import and installation services, and
+                                    Extended Reality (XR) services. Here's an overview of ALDTAN Engineering's
+                                    expertise in each area: Industrial Automation Solutions</p>
+                                <p>ALDTAN Engineering offers a comprehensive range of industrial automation
+                                    solutions to enhance efficiency, productivity, and safety in manufacturing and
+                                    industrial processes. Our automation solutions encompass programmable logic
+                                    controllers (PLCs), human-machine interfaces (HMIs), supervisory control and
+                                    data acquisition (SCADA) systems, robotics, and more. We design, implement, and
+                                    optimize automation systems to streamline operations, reduce downtime, and
+                                    improve overall performance.</p>
                             </div>
                         </div>
                     </div>
@@ -1454,15 +1495,15 @@ bg-primary-600 text-gray-600 py-2 px-5">
 
                 <div class="flex flex-wrap items-start justify-between relative z-10">
                     <div
-                        class="px-2 | lg:px-3 | xl:px-4 relative w-full flex flex-wrap | lg:mb-0 lg:w-9/16 | 4xl:w-8/16">
+                        class="px-2 | lg:px-3 | xl:px-4 relative w-full flex flex-wrap mb-6 | lg:mb-0 lg:w-1/2">
                         <div class="order-2 | lg:order-1">
                             <div
-                                class="inline-flex items-center space-x-2 w-auto mb-3 | xl:absolute xl:top-2 xl:left-4 ">
+                                class="inline-flex items-center space-x-2 w-auto mb-3">
                                 <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
                                 <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
                                     About us</div>
                             </div>
-                            <div class="w-full relative xl:indent-48 lg:pr-16">
+                            <div class="w-full relative lg:pr-16">
                                 <h2
                                     class="mb-3 text-pretty tracking-tight text-gray-600 | dark:text-grayDark-100 text-2xl md:text-3xl xl:text-4xl leading-none 4xl:text-5xl">
                                     Expert software designers and web developers trained in the digital industry who
@@ -1471,17 +1512,16 @@ bg-primary-600 text-gray-600 py-2 px-5">
                             </div>
                         </div>
                     </div>
-                    <div class="px-2 | lg:px-3 | xl:px-4 w-full | lg:w-7/16">
-                        <div class="w-full relative  xl:pr-10">
+                    <div class="px-2 | lg:px-3 | xl:px-4 w-full | lg:w-1/2">
+                        <div class="w-full relative xl:pr-10">
                             <p
                                 class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
                                 At ALDTAN, we are dedicated to pushing the boundaries of technology and delivering
                                 customised, effective solutions tailored to the unique needs of our clients. Our highly
                                 skilled team of engineers and consultants work tirelessly to develop innovative
                                 strategies and implement best practices to ensure your organisation stays ahead of the
-                                curve. By collaborating with ALDTAN, you can unlock your organisationÎ“Ã‡Ã–s full
-                                potential
-                                and thrive in an increasingly competitive global market.</p>
+                                curve. By collaborating with ALDTAN, you can unlock your organisation's full
+                                potential and thrive in an increasingly competitive global market.</p>
                         </div>
                     </div>
                 </div>
