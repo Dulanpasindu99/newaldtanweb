@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="en">
 
 <head>
@@ -39,7 +39,6 @@
             background-color: #006970 !important;
         }
 
-        /* Specifically target the "Start a project" button text if it stays dark */
         .bg-primary-600.text-gray-600 {
             color: white !important;
         }
@@ -53,91 +52,29 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#fff">
     <meta name="application-name" content="ALDTAN">
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/favicon/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="/assets/images/favicon/apple-touch-icon-1024x1024.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="ALDTAN">
-    <meta name="msapplication-TileColor" content="#FFF">
-    <meta name="msapplication-TileImage" content="assets/images/favicon/mstile-144x144.png">
-    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
-    <title>Software Development Company | Engineering Solutions | MadeByALDTAN</title>
-    <!-- Analytics removed -->
-    <meta name="description"
-        content="A leading Software Development Company specializing in Engineering Solutions, Web Development, Mobile Apps, Cloud Infrastructure, and Digital Transformation.">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <meta name="robots" content="all">
-    <meta content="en_GB" property="og:locale">
-    <meta content="ALDTAN" property="og:site_name">
-    <meta content="website" property="og:type">
-    <meta content="/" property="og:url">
-    <meta content="Software Development Company | Engineering Solutions | ALDTAN" property="og:title">
-    <meta
-        content="A leading Software Development Company specializing in Engineering Solutions, Web Development, Mobile Apps, Cloud Infrastructure, and Digital Transformation."
-        property="og:description">
-    <meta content="assets/images/aldtan-og-image.png" property="og:image">
-    <meta content="1200" property="og:image:width">
-    <meta content="630" property="og:image:height">
-    <meta
-        content="ALDTAN is a leading Software Development Company specializing in Engineering Solutions, Web Development, Mobile Apps, Cloud Infrastructure, and Digital Transformation. We deliver high-quality software solutions that drive business growth."
-        property="og:image:alt">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ALDTAN">
-    <meta name="twitter:creator" content="@ALDTAN">
-    <meta name="twitter:title" content="Software Development Company | Engineering Solutions | ALDTAN">
-    <meta name="twitter:description"
-        content="A leading Software Development Company specializing in Engineering Solutions, Web Development, Mobile Apps, Cloud Infrastructure, and Digital Transformation.">
-    <meta name="twitter:image" content="assets/images/aldtan-og-image.png">
-    <meta name="twitter:image:width" content="800">
-    <meta name="twitter:image:height" content="418">
-    <meta name="twitter:image:alt"
-        content="ALDTAN is a leading Software Development Company specializing in Engineering Solutions, Web Development, Mobile Apps, Cloud Infrastructure, and Digital Transformation. We deliver high-quality software solutions that drive business growth.">
-    <link href="/" rel="canonical">
-    <link href="/" rel="home">
-    <!-- author link removed -->
-    <script>if (localStorage.darkMode === undefined) {
-
+    <title>Blog | Software Development & Engineering Articles | ALDTAN</title>
+    <meta name="description" content="Read our latest articles on software development, engineering solutions, and digital transformation.">
+    <script>
+        if (localStorage.darkMode === undefined) {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-
                 localStorage.darkMode = 'true';
                 document.documentElement.classList.add('dark');
-
             } else {
-
                 localStorage.darkMode = 'false';
-
             }
-
         } else {
-
             if (localStorage.darkMode === 'true') {
-
                 document.documentElement.classList.add('dark');
-
             } else {
-
                 document.documentElement.classList.remove('dark');
-
             }
-
-        };</script>
+        }
+    </script>
 </head>
 
 <body class="bg-white | dark:bg-grayDark-600" x-data="app()" x-init="baseInit(), gaEvents()">
-    <script async src="//www.googletagmanager.com/gtag/js?id=UA-25433005-15"></script>
-
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WV3N2X" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <div class="fixed bottom-0 right-0 my-6 mx-8 z-50 group hidden opacity-0 pointer-events-none transition | md:block"
+    
+    ﻿    <div class="fixed bottom-0 right-0 my-6 mx-8 z-50 group hidden opacity-0 pointer-events-none transition | md:block"
         x-data="{
 show: false,
 }" x-on:scroll.window="if (window.scrollY > window.innerHeight / 3) {
@@ -153,7 +90,7 @@ document.querySelector('.js-sticky-contact-svg').style.transform = 'rotate(' + (
 'opacity-0 pointer-events-none': !show,
 }"><a href="/contact/" class="w-28 h-28 relative bg-primary-600 rounded-full flex items-center justify-center group">
             <div class="text-2xl relative top-0.5">
-                👀</div>
+                ðŸ‘€</div>
             <div class="absolute top-0 left-0 w-full h-full p-2.5 animate-spin-slow">
                 <div class="w-full h-full transition transform | xl:group-hover:rotate-180"><svg viewBox="0 0 109 110"
                         class="w-full h-full text-white fill-current  || js-sticky-contact-svg">
@@ -409,10 +346,9 @@ link font-light leading-tight transition-none text-gray-600 | dark:text-white
                                 </a>
                             </li>
                             <li class="relative">
-                                <a href="/work.html" class="
+                                <a href="/work" class="
 link font-light leading-tight transition-none text-gray-600 | dark:text-white
-
-link--visible" x-bind:class="{
+" x-bind:class="{
 'text-gray-600' : !headerSmall,
 'text-gray-600' : headerSmall,
 }" x-on:mouseenter="menu = false">
@@ -420,7 +356,7 @@ link--visible" x-bind:class="{
                                 </a>
                             </li>
                             <li class="relative">
-                                <a href="/about.html" class="
+                                <a href="/about" class="
 link font-light leading-tight transition-none text-gray-600 | dark:text-white
 " x-bind:class="{
 'text-gray-600' : !headerSmall,
@@ -432,6 +368,7 @@ link font-light leading-tight transition-none text-gray-600 | dark:text-white
                             <li class="relative">
                                 <a href="/blog/" class="
 link font-light leading-tight transition-none text-gray-600 | dark:text-white
+link--visible
 " x-bind:class="{
 'text-gray-600' : !headerSmall,
 'text-gray-600' : headerSmall,
@@ -440,7 +377,7 @@ link font-light leading-tight transition-none text-gray-600 | dark:text-white
                                 </a>
                             </li>
                             <li class="relative">
-                                <a href="/gallery.html" class="
+                                <a href="/gallery" class="
 link font-light leading-tight transition-none text-gray-600 | dark:text-white
 " x-bind:class="{
 'text-gray-600' : !headerSmall,
@@ -464,14 +401,8 @@ link font-light leading-tight transition-none text-gray-600 | dark:text-white
                     <div class="pr-2 inline-flex items-center relative z-10 | lg:space-x-2">
                         <a href="#" x-on:click.prevent="
 darkMode = !darkMode;
-localStorage.darkMode = darkMode;
-if (darkMode) {
-    document.documentElement.classList.add('dark');
-    document.cookie = 'darkMode=true;path=/';
-} else {
-    document.documentElement.classList.remove('dark');
-    document.cookie = 'darkMode=false;path=/';
-}
+localStorage.darkMode == 'true' ? localStorage.darkMode = 'false' : localStorage.darkMode = 'true';
+document.documentElement.classList.toggle('dark');
 " x-bind:class="{
 'text-gray-600' : !headerSmall,
 'text-gray-600' : headerSmall || menu == 'mobileMenu',
@@ -535,7 +466,7 @@ if (darkMode) {
                                         </filter>
                                     </defs>
                                 </svg>
-                                <a href="/contact.html"
+                                <a href="/contact"
                                     class="inline-flex relative group outline-none  | focus:outline-none "
                                     style="filter: url(#buttonFilter);">
                                     <div class="
@@ -561,7 +492,7 @@ bg-primary-600 text-white py-2 px-5">
                                 </a>
                                 <div
                                     class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                    <div class="relative overflow-hidden text-white">
+                                    <div class="relative overflow-hidden text-gray-600">
                                         <div
                                             class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
                                             <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
@@ -597,18 +528,17 @@ bg-primary-600 text-white py-2 px-5">
                                 </div>
                                 <ul class="flex flex-col items-start">
                                     <li class="relative">
-
-                                        <a href="/"
-                                            class="link text-4xl tracking-tight leading-none transition-none | dark:text-white">Home</a>
+                                        
+                                        <a href="/" class="link text-4xl tracking-tight leading-none transition-none | dark:text-white">Home</a>
                                     </li>
                                     <li class="relative">
-                                        <a href="/work.html"
+                                        <a href="/work/"
                                             class="link text-4xl tracking-tight leading-none transition-none | dark:text-white">
                                             Work
                                         </a>
                                     </li>
                                     <li class="relative">
-                                        <a href="/about.html"
+                                        <a href="/about/"
                                             class="link text-4xl tracking-tight leading-none transition-none | dark:text-white">
                                             About
                                         </a>
@@ -620,7 +550,7 @@ bg-primary-600 text-white py-2 px-5">
                                         </a>
                                     </li>
                                     <li class="relative">
-                                        <a href="/gallery.html"
+                                        <a href="/gallery"
                                             class="link text-4xl tracking-tight leading-none transition-none | dark:text-white">
                                             Gallery
                                         </a>
@@ -649,7 +579,7 @@ bg-primary-600 text-white py-2 px-5">
                                             </filter>
                                         </defs>
                                     </svg>
-                                    <a href="/contact.html"
+                                    <a href="/contact"
                                         class="inline-flex relative group outline-none  | focus:outline-none "
                                         style="filter: url(#buttonFilter);">
                                         <div class="
@@ -714,827 +644,666 @@ bg-primary-600 text-white py-2 px-5">
 'pointer-events-auto opacity-0' : menu == 'mobileMenu',
 }"></div>
     </div>
-    <div x-data="{ activeCategory: 'all' }" class="pt-20 pb-12 | lg:pt-36 lg:pb-16">
-        <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
-            <div class="px-2 | lg:px-3 | xl:px-4 w-full flex-wrap relative mb-7 | lg:mb-16">
-                <div class="relative w-full | lg:w-15/16">
-                    <h1
-                        class="inline-flex items-center space-x-2 w-auto mb-2 | lg:mb-0 lg:absolute lg:top-3 lg:left-4 ">
-                        <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
-                        <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
-                            Our Work</div>
-                    </h1>
-                    <ul class="flex-wrap flex">
-                        <li class="mr-4 | lg:mr-10">
-                            <a href="javascript:void(0)" @click="activeCategory = 'all'"
-                                :class="{ 'text-gray-600': activeCategory === 'all', 'text-gray-200': activeCategory !== 'all' }"
-                                class="inline-flex items-end group duration-200">
-                                <div class="
+    <main>
+        <div data-router-wrapper>
+            <div data-router-view="blog" x-data="{ blogCategory: 'all' }" class="pt-24 pb-8 | lg:pt-36 lg:pb-16 bg-white rounded-b-2xl | lg:rounded-b-3xl relative z-20 | dark:bg-grayDark-600">
+                <div class="px-8 | lg:px-16 | xl:px-24 w-full max-w-8xl mx-auto">
+                    
+<ul class="flex flex-wrap pt-2 | lg:pt-0">
+    <li class="mr-4 | lg:mr-10">
+        <a href="javascript:void(0)" x-on:click.prevent="blogCategory = 'all'"
+            x-bind:class="{ 'text-gray-600': blogCategory === 'all', 'text-gray-200': blogCategory !== 'all' }"
+            class="inline-flex items-end group duration-200">
+            <div class="
 text-2xl | md:text-4vw | xl:text-3vw
 font-sans-primary tracking-tight
 leading-tighter
 text-balance
 lg:indent-32 | xl:indent-48 lowercase transition | xl:group-hover:text-gray-600 lg:dark:group-hover:text-white
 ">Explore all</div>
-                                <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
-                                    :class="{ 'text-gray-600': activeCategory === 'all', 'text-gray-200': activeCategory !== 'all' }">
-                                    4</div>
-                            </a>
-                        </li>
-                        <li class="mr-4 | lg:mr-10">
-                            <a href="javascript:void(0)" @click="activeCategory = 'fleet'"
-                                :class="{ 'text-gray-600': activeCategory === 'fleet', 'text-gray-200': activeCategory !== 'fleet' }"
-                                class="inline-flex items-end group duration-200">
-                                <div class="
+            <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
+                x-bind:class="{ 'text-gray-600': blogCategory === 'all', 'text-gray-200': blogCategory !== 'all' }">
+                6</div>
+        </a>
+    </li>
+    <li class="mr-4 | lg:mr-10">
+        <a href="javascript:void(0)" x-on:click.prevent="blogCategory = 'culture'"
+            x-bind:class="{ 'text-gray-600': blogCategory === 'culture', 'text-gray-200': blogCategory !== 'culture' }"
+            class="inline-flex items-end group duration-200">
+            <div class="
 text-2xl | md:text-4vw | xl:text-3vw
 font-sans-primary tracking-tight
 leading-tighter
 text-balance
 lowercase transition | xl:group-hover:text-gray-600 lg:dark:group-hover:text-white
-">Fleet Management</div>
-                                <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
-                                    :class="{ 'text-gray-600': activeCategory === 'fleet', 'text-gray-200': activeCategory !== 'fleet' }">
-                                    2</div>
-                            </a>
-                        </li>
-                        <li class="mr-4 | lg:mr-10">
-                            <a href="javascript:void(0)" @click="activeCategory = 'healthcare'"
-                                :class="{ 'text-gray-600': activeCategory === 'healthcare', 'text-gray-200': activeCategory !== 'healthcare' }"
-                                class="inline-flex items-end group duration-200">
-                                <div class="
+">Culture</div>
+            <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
+                x-bind:class="{ 'text-gray-600': blogCategory === 'culture', 'text-gray-200': blogCategory !== 'culture' }">
+                1</div>
+        </a>
+    </li>
+    <li class="mr-4 | lg:mr-10">
+        <a href="javascript:void(0)" x-on:click.prevent="blogCategory = 'marketing'"
+            x-bind:class="{ 'text-gray-600': blogCategory === 'marketing', 'text-gray-200': blogCategory !== 'marketing' }"
+            class="inline-flex items-end group duration-200">
+            <div class="
 text-2xl | md:text-4vw | xl:text-3vw
 font-sans-primary tracking-tight
 leading-tighter
 text-balance
 lowercase transition | xl:group-hover:text-gray-600 lg:dark:group-hover:text-white
-">Healthcare</div>
-                                <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
-                                    :class="{ 'text-gray-600': activeCategory === 'healthcare', 'text-gray-200': activeCategory !== 'healthcare' }">
-                                    1</div>
-                            </a>
-                        </li>
-                        <li class="mr-4 | lg:mr-10">
-                            <a href="javascript:void(0)" @click="activeCategory = 'industrial'"
-                                :class="{ 'text-gray-600': activeCategory === 'industrial', 'text-gray-200': activeCategory !== 'industrial' }"
-                                class="inline-flex items-end group duration-200">
-                                <div class="
+">Marketing</div>
+            <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
+                x-bind:class="{ 'text-gray-600': blogCategory === 'marketing', 'text-gray-200': blogCategory !== 'marketing' }">
+                2</div>
+        </a>
+    </li>
+    <li class="mr-4 | lg:mr-10">
+        <a href="javascript:void(0)" x-on:click.prevent="blogCategory = 'news'"
+            x-bind:class="{ 'text-gray-600': blogCategory === 'news', 'text-gray-200': blogCategory !== 'news' }"
+            class="inline-flex items-end group duration-200">
+            <div class="
 text-2xl | md:text-4vw | xl:text-3vw
 font-sans-primary tracking-tight
 leading-tighter
 text-balance
 lowercase transition | xl:group-hover:text-gray-600 lg:dark:group-hover:text-white
-">Industrial</div>
-                                <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
-                                    :class="{ 'text-gray-600': activeCategory === 'industrial', 'text-gray-200': activeCategory !== 'industrial' }">
-                                    1</div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+">News</div>
+            <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
+                x-bind:class="{ 'text-gray-600': blogCategory === 'news', 'text-gray-200': blogCategory !== 'news' }">
+                1</div>
+        </a>
+    </li>
+    <li class="mr-4 | lg:mr-10">
+        <a href="javascript:void(0)" x-on:click.prevent="blogCategory = 'software-systems'"
+            x-bind:class="{ 'text-gray-600': blogCategory === 'software-systems', 'text-gray-200': blogCategory !== 'it-systems' }"
+            class="inline-flex items-end group duration-200">
+            <div class="
+text-2xl | md:text-4vw | xl:text-3vw
+font-sans-primary tracking-tight
+leading-tighter
+text-balance
+lowercase transition | xl:group-hover:text-gray-600 lg:dark:group-hover:text-white
+">Software Systems</div>
+            <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
+                x-bind:class="{ 'text-gray-600': blogCategory === 'software-systems', 'text-gray-200': blogCategory !== 'it-systems' }">
+                1</div>
+        </a>
+    </li>
+    <li class="mr-4 | lg:mr-10">
+        <a href="javascript:void(0)" x-on:click.prevent="blogCategory = 'engineering-systems'"
+            x-bind:class="{ 'text-gray-600': blogCategory === 'engineering-systems', 'text-gray-200': blogCategory !== 'engineering-systems' }"
+            class="inline-flex items-end group duration-200">
+            <div class="
+text-2xl | md:text-4vw | xl:text-3vw
+font-sans-primary tracking-tight
+leading-tighter
+text-balance
+lowercase transition | xl:group-hover:text-gray-600 lg:dark:group-hover:text-white
+">Engineering Systems</div>
+            <div class="text-sm ml-1 transition mb-0.5 | lg:mb-2"
+                x-bind:class="{ 'text-gray-600': blogCategory === 'engineering-systems', 'text-gray-200': blogCategory !== 'engineering-systems' }">
+                1</div>
+        </a>
+    </li>
+</ul>
+
+<div class="flex flex-wrap -mb-16 mt-20">
+    <div class="px-2 | lg:px-3 | xl:px-4 w-full mb-6 | lg:hidden">
+        <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
+            <div class="inline-flex items-center space-x-2  ">
+                <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
+                <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
+                    Our Blog</div>
             </div>
-            <div class="flex flex-wrap -mb-16">
-                <div class="px-2 | lg:px-3 | xl:px-4 w-full mb-6 | lg:hidden">
-                    <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                        <div class="inline-flex items-center space-x-2  ">
-                            <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
-                            <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
-                                Our Software Development Projects</div>
-                        </div>
-                        <h2 class="
+            <h2 class="
 text-2-5xl | md:text-3xl | lg:text-4xl | 2xl:text-6xl | 4xl:text-7xl
 font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
 leading-none
 text-balance
 max-w-sm
-">Take a look at our projects</h2>
-                    </div>
-                </div>
-                <div class="px-2 | lg:px-3 | xl:px-4 w-full | md:w-8/16 md:mt-20"
-                    x-show="activeCategory === 'all' || activeCategory === 'fleet'">
-                    <div class="w-full mb-16 | lg:mb-28">
-                        <div class="w-full relative"><a href="https://spgps.lk/"
-                                class="w-fell relative group flex flex-col items-start transform rotate-001 || js-cursor-trigger-drag">
-                                <div class="w-full relative overflow-hidden mb-6">
-                                    <div
-                                        class="absolute -top-px pt-px -right-px z-20 bg-white pl-3 pb-3 transition-transform duration-300 transform-gpu rotate-001 rounded-bl-3xl | xl:-translate-y-full | xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                        <svg id="Layer_1"
-                                            class="w-10 h-10 | lg:w-10 lg:h-10 text-white fill-current absolute top-0 left-px transform-gpu -translate-x-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                            viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                        </svg><svg id="Layer_1"
-                                            class="w-10 h-10 | lg:w-10 lg:h-10 text-white fill-current absolute bottom-px right-0 transform-gpu translate-y-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                            viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                        </svg>
-                                        <div class="flex flex-wrap items-center -mb-2 lg:-mb-3 -mr-2">
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3  text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                Web Based</div>
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3  text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                GPS Monitored</div>
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3 hidden | lg:inline-flex text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                Complex Solution</div>
-                                            <div class="lg:hidden text-sm pr-6 mb-2 | lg:mb-3 | dark:text-grayDark-200">
-                                                + 1</div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="w-full rounded-2xl transform-gpu overflow-hidden relative bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                        <div class="w-full relative overflow-hidden">
-                                            <div
-                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                <div class="w-full aspect-ratio-4/3 overflow-hidden relative"><video
-                                                        class="w-full h-full object-cover absolute top-0 left-0"
-                                                        autoplay loop muted playsinline loading="lazy">
-                                                        <source src="/assets/videos/spgpsweb.mp4" type="video/mp4">
-                                                    </video></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center space-x-3 mb-2 text-sm | lg:text-base | dark:text-grayDark-200">
-                                    <div class="font-light">
-                                        2025</div>
-                                    <div
-                                        class="w-1.5 h-1.5 relative -top-px bg-gray-600 rounded-full | dark:bg-grayDark-200">
-                                    </div>
-                                    <div class="font-light">
-                                        Southern Province Road Passenger Transport Authority</div>
-                                </div>
-                                <h2 class="
-text-xl | xl:text-2xl | 4xl:text-3xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-balance
-pr-10
-">Digitalized and regulated system for the Sri Lankan transportation sector.</h2>
-                            </a></div>
-                    </div>
-                    <div class="w-full mb-16 | lg:mb-28"
-                        x-show="activeCategory === 'all' || activeCategory === 'fleet'">
-                        <div class="w-full relative"><a
-                                href="https://play.google.com/store/apps/details?id=com.aldtan.spbuses.prod.v02&pcampaignid=web_share"
-                                class="w-fell relative group flex flex-col items-start transform rotate-001 || js-cursor-trigger-drag">
-                                <div class="w-full relative overflow-hidden mb-6">
-                                    <div
-                                        class="absolute -top-px pt-px -right-px z-20 bg-white pl-3 pb-3 transition-transform duration-300 transform-gpu rotate-001 rounded-bl-3xl | xl:-translate-y-full | xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                        <svg id="Layer_1"
-                                            class="w-10 h-10 | lg:w-10 lg:h-10 text-white fill-current absolute top-0 left-px transform-gpu -translate-x-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                            viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                        </svg><svg id="Layer_1"
-                                            class="w-10 h-10 | lg:w-10 lg:h-10 text-white fill-current absolute bottom-px right-0 transform-gpu translate-y-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                            viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                        </svg>
-                                        <div class="flex flex-wrap items-center -mb-2 lg:-mb-3 -mr-2">
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3  text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                Mobile Application</div>
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3  text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                Android</div>
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3 hidden | lg:inline-flex text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                Public Transport</div>
-                                            <div class="lg:hidden text-sm pr-6 mb-2 | lg:mb-3 | dark:text-grayDark-200">
-                                                + 1</div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="w-full rounded-2xl transform-gpu overflow-hidden relative bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                        <div class="w-full relative overflow-hidden">
-                                            <div
-                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                <div class="relative overflow-hidden w-full" style="padding-top: 75%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp" srcset="/assets/images/spbusesapp.jpg"
-                                                            sizes="100vw">
-                                                        <img src="/assets/images/spbusesapp.jpg" sizes="100vw"
-                                                            alt="Sketch website" class=" w-full   relative z-10 w-full"
-                                                            loading="lazy" width="1200" height="900">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center space-x-3 mb-2 text-sm | lg:text-base | dark:text-grayDark-200">
-                                    <div class="font-light">
-                                        2025</div>
-                                    <div
-                                        class="w-1.5 h-1.5 relative -top-px bg-gray-600 rounded-full | dark:bg-grayDark-200">
-                                    </div>
-                                    <div class="font-light">
-                                        Product of ALDTAN IT</div>
-                                </div>
-                                <h2 class="
-text-xl | xl:text-2xl | 4xl:text-3xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-balance
-pr-10
-">Live Public Transport App for Sri Lankans</h2>
-                            </a></div>
-                    </div>
-                    <div class="w-full hidden | lg:flex">
-                        <div class="w-full justify-center text-center flex mb-10">
-                            <div class="flex flex-col items-center justify-center">
-                                <h2 class="
-text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-mb-5
-">Like what <br />
-                                    you see?</h2>
-                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
-                                    <svg width="0" height="0" class="absolute hidden"
-                                        color-interpolation-filters="sRGB">
-                                        <defs>
-                                            <filter id="buttonFilter">
-                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                                <feColorMatrix in="blur" mode="matrix"
-                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                    result="buttonFilter" />
-                                                <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop" />
-                                                <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                    <a href="/contact/"
-                                        class="inline-flex relative group outline-none  | focus:outline-none "
-                                        style="filter: url(#buttonFilter);">
-                                        <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-white py-2 px-5">
-                                            <div class="relative inline-flex top-px flex-shrink-0">
-                                                <div>
-                                                    Contact us</div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
-                                        </div>
-                                    </a>
-                                    <div
-                                        class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                        <div class="relative overflow-hidden text-gray-600">
-                                            <div
-                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                            <div
-                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="https://maps.app.goo.gl/EyGa8eQPoSMT9xaq9" target="_blank" class="flex w-full">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 27%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/google-reviews-badge.png"
-                                                sizes="100vw">
-                                            <img src="/assets/images/google-reviews-badge.png"
-                                                srcset="/assets/images/google-reviews-badge.png" sizes="100vw"
-                                                alt="Google reviews badge" class=" w-full   w-60 mt-3" loading="lazy"
-                                                width="400" height="108">
-                                        </picture>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="px-2 | lg:px-3 | xl:px-4 w-full | md:w-8/16 ">
-                    <div class="w-full justify-center mb-16 hidden | lg:flex lg:mb-20">
-                        <div class="flex flex-col space-y-3 | lg:space-y-5 items-start">
-                            <div class="inline-flex items-center space-x-2  ">
-                                <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
-                                <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
-                                    Our Software Developemnt Projects</div>
-                            </div>
-                            <h2 class="
-text-2-5xl | md:text-3xl | lg:text-4xl | 2xl:text-6xl | 4xl:text-7xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-max-w-sm | xl:max-w-md | 4xl:max-w-lg
-">Take a look at our projects</h2>
-                        </div>
-                    </div>
-                    <div class="w-full mb-16 | lg:mb-28"
-                        x-show="activeCategory === 'all' || activeCategory === 'healthcare'">
-                        <div class="w-full relative"><a href="https://medlinkapp.aldtan.com/login"
-                                class="w-fell relative group flex flex-col items-start transform rotate-001 || js-cursor-trigger-drag">
-                                <div class="w-full relative overflow-hidden mb-6">
-                                    <div
-                                        class="absolute -top-px pt-px -right-px z-20 bg-white pl-3 pb-3 transition-transform duration-300 transform-gpu rotate-001 rounded-bl-3xl | xl:-translate-y-full | xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                        <svg id="Layer_1"
-                                            class="w-10 h-10 | lg:w-10 lg:h-10 text-white fill-current absolute top-0 left-px transform-gpu -translate-x-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                            viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                        </svg><svg id="Layer_1"
-                                            class="w-10 h-10 | lg:w-10 lg:h-10 text-white fill-current absolute bottom-px right-0 transform-gpu translate-y-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                            viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                        </svg>
-                                        <div class="flex flex-wrap items-center -mb-2 lg:-mb-3 -mr-2">
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3  text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                Medical Sector</div>
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3  text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                Patients Management</div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="w-full rounded-2xl transform-gpu overflow-hidden relative bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                        <div class="w-full relative overflow-hidden">
-                                            <div
-                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                <div class="relative overflow-hidden w-full" style="padding-top: 75%;">
-                                                    <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                                        <source type="image/webp" srcset="/assets/images/medlinkint.jpg"
-                                                            sizes="100vw">
-                                                        <img src="/assets/images/portfolio-showcase.png"
-                                                            srcset="/assets/images/portfolio-showcase.png" sizes="100vw"
-                                                            alt="Camera 6 Sun loungers Dining set Final 300dpi"
-                                                            class=" w-full   relative z-10 w-full" loading="lazy"
-                                                            width="1200" height="900">
-                                                    </picture>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center space-x-3 mb-2 text-sm | lg:text-base | dark:text-grayDark-200">
-                                    <div class="font-light">
-                                        2025</div>
-                                    <div
-                                        class="w-1.5 h-1.5 relative -top-px bg-gray-600 rounded-full | dark:bg-grayDark-200">
-                                    </div>
-                                    <div class="font-light">
-                                        Product of ALDTAN IT</div>
-                                </div>
-                                <h2 class="
-text-xl | xl:text-2xl | 4xl:text-3xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-balance
-pr-10
-">Patients Management System for Doctors and Pharmacies</h2>
-                            </a></div>
-                    </div>
-                    <div class="w-full mb-16 | lg:mb-28"
-                        x-show="activeCategory === 'all' || activeCategory === 'industrial'">
-                        <div class="w-full relative"><a
-                                href="https://www.lolc.com/news/from-sri-lanka-to-middle-east-lolc-advance-technologies-sets-a-new-era-in-graphene-technology"
-                                class="w-fell relative group flex flex-col items-start transform rotate-001 || js-cursor-trigger-drag">
-                                <div class="w-full relative overflow-hidden mb-6">
-                                    <div
-                                        class="absolute -top-px pt-px -right-px z-20 bg-white pl-3 pb-3 transition-transform duration-300 transform-gpu rotate-001 rounded-bl-3xl | xl:-translate-y-full | xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
-                                        <svg id="Layer_1"
-                                            class="w-10 h-10 | lg:w-10 lg:h-10 text-white fill-current absolute top-0 left-px transform-gpu -translate-x-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                            viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                        </svg><svg id="Layer_1"
-                                            class="w-10 h-10 | lg:w-10 lg:h-10 text-white fill-current absolute bottom-px right-0 transform-gpu translate-y-full dark:text-grayDark-600"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
-                                            viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
-                                        </svg>
-                                        <div class="flex flex-wrap items-center -mb-2 lg:-mb-3 -mr-2">
-                                            <div
-                                                class="bg-gray-50 leading-tight rounded-full mr-2 mb-2 | lg:mr-3 lg:mb-3  text-sm pt-2 pb-1.5 px-4 | dark:bg-grayDark-400 dark:text-white">
-                                                NI LabVIEW</div>
-                                            <div class="lg:hidden text-sm pr-6 mb-2 | lg:mb-3 | dark:text-grayDark-200">
-                                                + -1</div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="w-full rounded-2xl transform-gpu overflow-hidden relative bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
-                                        <div class="w-full relative overflow-hidden">
-                                            <div
-                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
-                                                <div class="w-full aspect-ratio-4/3 overflow-hidden relative"><img
-                                                        class="w-full h-full object-cover absolute top-0 left-0"
-                                                        src="/assets/images/lolc.jpg" type="image/jpg">
-                                                    </img></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center space-x-3 mb-2 text-sm | lg:text-base | dark:text-grayDark-200">
-                                    <div class="font-light">
-                                        2025</div>
-                                    <div
-                                        class="w-1.5 h-1.5 relative -top-px bg-gray-600 rounded-full | dark:bg-grayDark-200">
-                                    </div>
-                                    <div class="font-light">
-                                        Developed By ALDTAN Engineering</div>
-                                </div>
-                                <h2 class="
-text-xl | xl:text-2xl | 4xl:text-3xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-tighter
-text-balance
-pr-10
-">Comprehensive NI LabVIEW SCADA Integration</h2>
-                            </a></div>
-                    </div>
-                    <div class="w-full | lg:hidden">
-                        <div class="w-full justify-center text-center flex mb-10">
-                            <div class="flex flex-col items-center justify-center">
-                                <h2 class="
-text-2xl | md:text-3xl | xl:text-4xl | 4xl:text-5xl
-font-sans-primary tracking-tight
-text-gray-600  | dark:text-grayDark-100
-leading-none
-text-balance
-mb-5
-">Like what <br />
-                                    you see?</h2>
-                                <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                    x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
-                                    <svg width="0" height="0" class="absolute hidden"
-                                        color-interpolation-filters="sRGB">
-                                        <defs>
-                                            <filter id="buttonFilter">
-                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                                <feColorMatrix in="blur" mode="matrix"
-                                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                    result="buttonFilter" />
-                                                <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop" />
-                                                <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                            </filter>
-                                        </defs>
-                                    </svg>
-                                    <a href="/contact/"
-                                        class="inline-flex relative group outline-none  | focus:outline-none "
-                                        style="filter: url(#buttonFilter);">
-                                        <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-white py-2 px-5">
-                                            <div class="relative inline-flex top-px flex-shrink-0">
-                                                <div>
-                                                    Contact us</div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
-                                        </div>
-                                    </a>
-                                    <div
-                                        class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                        <div class="relative overflow-hidden text-gray-600">
-                                            <div
-                                                class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                            <div
-                                                class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                                <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="https://maps.app.goo.gl/EyGa8eQPoSMT9xaq9" target="_blank" class="flex w-full">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 27%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/team-member.png"
-                                                sizes="100vw">
-                                            <img src="/assets/images/team-member.png"
-                                                srcset="/assets/images/team-member.png" sizes="100vw"
-                                                alt="Google reviews badge" class=" w-full   w-60 mt-3" loading="lazy"
-                                                width="400" height="108">
-                                        </picture>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+">Take a look at our latest articles</h2>
         </div>
     </div>
-    <div class="w-full ">
-        <div id="428281"></div>
-        <div x-data="ticker" x-init="carousels(428281, 0.3)" class="w-full overflow-hidden">
-            <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-                <div class="px-0">
-                    <div class="w-full || js-cursor-trigger-drag">
-                        <div class="w-full flex  || js-carousel-428281">
-                            <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
-                                <a href="/contact.html" class="inline-flex flex-shrink-0">
-                                    <div class="
-text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw
+<div class="px-2 | lg:px-3 | xl:px-4 w-full | md:w-1/2 | lg:w-1/3 mb-16" x-show="blogCategory === 'all' || blogCategory === 'software-systems'">
+
+                                        <div class="w-full"><a href="/blog/"
+                                                class="flex flex-col items-start group || js-cursor-trigger-drag">
+                                                <div class="w-full relative mb-5">
+                                                    <div
+                                                        class="w-full relative overflow-hidden rounded-bl-xl mb-3 pl-px | lg:rounded-bl-2xl">
+                                                        <div
+                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform duration-400 transform pt-2 pr-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
+                                                            <svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px left-0 transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg><svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg>
+                                                            <div
+                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | dark:bg-grayDark-400 | lg:w-16 lg:h-16 | lg:rounded-2xl">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 100%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/buttonicon2.jpg"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw" alt="Andy ALDTAN"
+                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
+                                                                            loading="lazy" width="200" height="200">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
+                                                            <div
+                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 56.25%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/Blog/btransportp1.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/Blog/btransportp1.jpg"
+                                                                            srcset="/assets/images/Blog/btransportp1.webp"
+                                                                            sizes="100vw" alt="Risexshape team"
+                                                                            class=" w-full  " loading="lazy" width="800"
+                                                                            height="450">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inline-flex items-center space-x-2 mb-1 ">
+                                                    <div
+                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
+                                                    </div>
+                                                    <div
+                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
+                                                        2 min read</div>
+                                                </div>
+                                                <div class="
+text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
 font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
 leading-tighter
-text-balance
-js-heading-428281
-">Let's work together.</div>
-                                    <div
-                                        class=" ml-4 mt-2 w-16 h-16 rounded-full bg-primary-600 flex items-center justify-center | md:mt-4 | lg:mt-3 lg:w-24 lg:h-24 | xl:hidden">
-                                        <svg class="w-7 h-7 fill-current | lg:w-8 lg:h-8" width="12" height="16"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M344 96c4.4 0 8 3.6 8 8v240c0 4.4-3.6 8-8 8s-8-3.6-8-8V123.3L45.7 413.7c-3.1 3.1-8.2 3.1-11.3 0s-3.1-8.2 0-11.3L324.7 112H104c-4.4 0-8-3.6-8-8s3.6-8 8-8h240z" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="w-full flex justify-end || js-carousel-428281">
-                            <div class="px-2 | lg:px-3 | xl:px-4 inline-flex flex-shrink-0 w-auto">
-                                <a href="/contact.html" class="inline-flex flex-shrink-0">
-                                    <div class="
-text-20vw | md:text-11vw | lg:text-10vw | 4xl:text-8vw
+text-pretty
+pr-8 mb-5 | lg:pr-16
+">What is the Web Based Solution for SL Transpotation ?</div>
+                                                <div
+                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
+                                                    <p>
+                                                        A Web-Based Solution for Sri Lankan Transportation is an online
+                                                        platform that helps manage and improve public and private
+                                                        transport
+                                                        services using the internet...</p>
+                                                </div>
+                                            </a></div>
+                                    </div><div class="px-2 | lg:px-3 | xl:px-4 w-full | md:w-1/2 | lg:w-1/3 mb-16" x-show="blogCategory === 'all' || blogCategory === 'engineering-systems'">
+
+                                        <div class="w-full"><a href="/blog/"
+                                                class="flex flex-col items-start group || js-cursor-trigger-drag">
+                                                <div class="w-full relative mb-5">
+                                                    <div
+                                                        class="w-full relative overflow-hidden rounded-bl-xl mb-3 pl-px | lg:rounded-bl-2xl">
+                                                        <div
+                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform duration-400 transform pt-2 pr-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
+                                                            <svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px left-0 transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg><svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg>
+                                                            <div
+                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | dark:bg-grayDark-400 | lg:w-16 lg:h-16 | lg:rounded-2xl">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 100%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/buttonicon2.jpg"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw" alt="Natasia ALDTAN"
+                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
+                                                                            loading="lazy" width="200" height="200">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
+                                                            <div
+                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 56.25%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/Blog/blabview2.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/Blog/blabview2.jpg"
+                                                                            srcset="/assets/images/Blog/blabview2.webp"
+                                                                            sizes="100vw"
+                                                                            alt="Close up of the ALDTAN team looking at wireframes"
+                                                                            class=" w-full  " loading="lazy" width="800"
+                                                                            height="450">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inline-flex items-center space-x-2 mb-1 ">
+                                                    <div
+                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
+                                                    </div>
+                                                    <div
+                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
+                                                        6 min read</div>
+                                                </div>
+                                                <div class="
+text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
 font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
 leading-tighter
-text-balance
-js-heading-428281
-">Let's work together.</div>
-                                    <div
-                                        class=" ml-4 mt-2 w-16 h-16 rounded-full bg-primary-600 flex items-center justify-center | md:mt-4 | lg:mt-3 lg:w-24 lg:h-24 | xl:hidden">
-                                        <svg class="w-7 h-7 fill-current | lg:w-8 lg:h-8" width="12" height="16"
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M344 96c4.4 0 8 3.6 8 8v240c0 4.4-3.6 8-8 8s-8-3.6-8-8V123.3L45.7 413.7c-3.1 3.1-8.2 3.1-11.3 0s-3.1-8.2 0-11.3L324.7 112H104c-4.4 0-8-3.6-8-8s3.6-8 8-8h240z" />
-                                        </svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="428299"></div>
-        <div x-data="scatteredImages" x-init="parallax(428299)" x-on:mousemove="mouseMove(428299)">
-            <div class="w-full pb-20 | lg:pb-24 | 2xl:pb-32 | 4xl:pb-40">
-                <div class="px-0">
-                    <div
-                        class="w-full h-screen-fix relative flex flex-wrap justify-center | md:h-screen-fix-80 | lg:h-screen-fix lg:min-h-160">
-                        <div
-                            class="absolute transform pointer-events-none inline-flex top-10 -left-10 | lg:-top-10 w-10/16 | md:w-5/16 | lg:w-4/16">
-                            <div class="w-full || js-mouse-move-428299">
-                                <div
-                                    class="w-full overflow-hidden relative rounded-xl bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-2xl">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 66.75%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/medlinkint.jpg"
-                                                sizes="100vw">
-                                            <img src="/assets/images/medlinkint.jpg"
-                                                srcset="/assets/images/medlinkint.jpg" sizes="100vw" alt="Billboard"
-                                                class="w-full " width="800" height="533">
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute transform pointer-events-none inline-flex top-40 right-10 | md:right-auto md:left-20 md:top-0 |  lg:left-40 lg:top-10 w-8/16 | md:w-4/16 | lg:w-4/16">
-                            <div class="w-full || js-mouse-move--reverse-428299">
-                                <div
-                                    class="w-full overflow-hidden relative rounded-xl bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-2xl">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 56.25%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/spbusesapp.jpg"
-                                                sizes="100vw">
-                                            <img src="/assets/images/spbusesapp.jpg"
-                                                srcset="/assets/images/spbusesapp.jpg" sizes="100vw" alt="Homepage 1"
-                                                class="w-full " width="800" height="450">
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute transform pointer-events-none inline-flex bottom-28 left-10 hidden | lg:left-20 | md:flex w-7/16 | md:w-5/16 | lg:w-3/16">
-                            <div class="w-full || js-mouse-move-428299">
-                                <div
-                                    class="w-full overflow-hidden relative rounded-xl bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-2xl">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 66.75%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/spbusesapp.jpg"
-                                                sizes="100vw">
-                                            <img src="/assets/images/spbusesapp.jpg"
-                                                srcset="/assets/images/spbusesapp.jpg" sizes="100vw" alt="Billboard min"
-                                                class="w-full " width="800" height="534">
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute transform pointer-events-none inline-flex right-5 -bottom-10 | md:right-auto md:left-80 w-10/16 | md:w-6/16 | lg:w-4/16">
-                            <div class="w-full || js-mouse-move--reverse-428299">
-                                <div
-                                    class="w-full overflow-hidden relative rounded-xl bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-2xl">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 70.75%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/medlinkint.jpg"
-                                                sizes="100vw">
-                                            <img src="/assets/images/medlinkint.jpg"
-                                                srcset="/assets/images/medlinkint.jpg" sizes="100vw" alt="10 4 copy"
-                                                class="w-full " width="800" height="566">
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute transform pointer-events-none inline-flex right-40 bottom-20 | md:right-4 | lg:right-40 w-7/16 | md:w-5/16 | lg:w-3/16">
-                            <div class="w-full || js-mouse-move-428299">
-                                <div
-                                    class="w-full overflow-hidden relative rounded-xl bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-2xl">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 66.75%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/spbusesapp.jpg"
-                                                sizes="100vw">
-                                            <img src="/assets/images/spbusesapp.jpg"
-                                                srcset="/assets/images/spbusesapp.jpg" sizes="100vw"
-                                                alt="Business Cards min" class="w-full " width="800" height="534">
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute transform pointer-events-none inline-flex right-8 top-20 hidden | md:right-12 | lg:right-8 | md:flex w-6/16 | md:w-6/16 | lg:w-3/16">
-                            <div class="w-full || js-mouse-move--reverse-428299">
-                                <div
-                                    class="w-full overflow-hidden relative rounded-xl bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-2xl">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 56.25%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/medlinkint.jpg"
-                                                sizes="100vw">
-                                            <img src="/assets/images/medlinkint.jpg"
-                                                srcset="/assets/images/medlinkint.jpg" sizes="100vw" alt="Homepage 2"
-                                                class="w-full " width="800" height="450">
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute transform pointer-events-none inline-flex right-5 -top-10 | lg:right-60 w-6/16 | lg:w-4/16">
-                            <div class="w-full || js-mouse-move-428299">
-                                <div
-                                    class="w-full overflow-hidden relative rounded-xl bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-2xl">
-                                    <div class="relative overflow-hidden w-full" style="padding-top: 56.25%;">
-                                        <picture class="w-full absolute top-0 left-0 w-full h-full ">
-                                            <source type="image/webp" srcset="/assets/images/lolc.jpg" sizes="100vw">
-                                            <img src="/assets/images/lolc.jpg" srcset="/assets/images/lolc.jpg"
-                                                sizes="100vw" alt="Homepage" class="w-full " width="800" height="450">
-                                        </picture>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="px-2 | lg:px-3 | xl:px-4 w-full h-full flex flex-col space-y-6 justify-center items-center text-center">
-                            <div class="flex flex-col space-y-3 | lg:space-y-5 items-center text-center">
-                                <h1 class="
-text-2-5xl | md:text-7vw | lg:text-5vw
+text-pretty
+pr-8 mb-5 | lg:pr-16
+">What are the NI LabVIEW Systems we developed</div>
+                                                <div
+                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
+                                                    <p>
+                                                        We developed NI LabVIEW–based automation and control systems for
+                                                        industrial and research applications. These systems were
+                                                        designed to monitor, control, and analyze real-time data from
+                                                        machines, sensors, and testing equipment.</p>
+                                                </div>
+                                            </a></div>
+                                    </div><div class="px-2 | lg:px-3 | xl:px-4 w-full | md:w-1/2 | lg:w-1/3 mb-16" x-show="blogCategory === 'all' || blogCategory === 'marketing'">
+
+                                        <div class="w-full"><a href="/blog/"
+                                                class="flex flex-col items-start group || js-cursor-trigger-drag">
+                                                <div class="w-full relative mb-5">
+                                                    <div
+                                                        class="w-full relative overflow-hidden rounded-bl-xl mb-3 pl-px | lg:rounded-bl-2xl">
+                                                        <div
+                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform duration-400 transform pt-2 pr-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
+                                                            <svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px left-0 transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg><svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg>
+                                                            <div
+                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | dark:bg-grayDark-400 | lg:w-16 lg:h-16 | lg:rounded-2xl">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 100%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/buttonicon2.jpg"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw" alt="Andy ALDTAN"
+                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
+                                                                            loading="lazy" width="200" height="200">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
+                                                            <div
+                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 56.25%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/Blog/btrans3.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/Blog/btrans3.jpg"
+                                                                            srcset="/assets/images/Blog/btrans3.webp"
+                                                                            sizes="100vw"
+                                                                            alt="The team go through some new website witreframes"
+                                                                            class=" w-full  " loading="lazy" width="800"
+                                                                            height="450">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inline-flex items-center space-x-2 mb-1 ">
+                                                    <div
+                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
+                                                    </div>
+                                                    <div
+                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
+                                                        10 min read</div>
+                                                </div>
+                                                <div class="
+text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
 font-sans-primary tracking-tight
 text-gray-600  | dark:text-grayDark-100
-leading-0.9
-text-balance
-">Smart stuff we’re <br />
-                                    working on right now</h1>
-                            </div>
-                            <div class="w-full relative ">
-                                <p
-                                    class="text-base | xl:text-md text-gray-600 dark:text-grayDark-200 font-sans-primary relative z-10 text-pretty font-light leading-7  mb-6">
-                                    Shhhh... sneak previews, don’t tell anyone</p>
-                            </div>
-                            <div class="relative group inline-flex items-center" x-data="{ hover: false }"
-                                x-on:mouseenter="hover = true" x-on:mouseleave="hover = false">
-                                <svg width="0" height="0" class="absolute hidden" color-interpolation-filters="sRGB">
-                                    <defs>
-                                        <filter id="buttonFilter">
-                                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                            <feColorMatrix in="blur" mode="matrix"
-                                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                                                result="buttonFilter" />
-                                            <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop" />
-                                            <feBlend in="SourceGraphic" in2="buttonFilter" />
-                                        </filter>
-                                    </defs>
-                                </svg>
-                                <a href="/contact.html"
-                                    class="inline-flex relative group outline-none  | focus:outline-none "
-                                    style="filter: url(#buttonFilter);">
-                                    <div class="
-w-auto
-inline-flex
-items-center
-justify-center
-relative
-leading-tight
-shadow-none
-overflow-hidden
-rounded-full
-border-default
-bg-primary-600 text-gray-600 py-2 px-5">
-                                        <div class="relative inline-flex top-px flex-shrink-0">
-                                            <div>
-                                                Start your project</div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="bg-primary-600 flex-shrink-0 overflow-hidden flex items-center justify-center -ml-1 rounded-full transform transition-transform | w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 | js-button-icon">
-                                    </div>
-                                </a>
-                                <div
-                                    class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center z-20 transition-transform transform w-9 h-9 | xl:group-hover:translate-x-3  xl:group-hover:rotate-45 || js-button-arrow">
-                                    <div class="relative overflow-hidden text-gray-600">
-                                        <div
-                                            class="relative top-0 left-0 transition-transform transform || js-button-arrow-icon-primary ">
-                                            <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                            </svg>
-                                        </div>
-                                        <div
-                                            class="absolute top-0 left-0 transition-transform transform translate-y-full -translate-x-full || js-button-arrow-icon-secondary ">
-                                            <svg class="w-3 h-3 fill-current" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+leading-tighter
+text-pretty
+pr-8 mb-5 | lg:pr-16
+">Why we speciallzed for the transportation sector?</div>
+                                                <div
+                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
+                                                    <p>
+                                                        We specialized in Transportation Sector Digitalization because
+                                                        transportation is a critical part of a country’s economy and
+                                                        daily life, and many processes were still manual, slow, and
+                                                        difficult to monitor in real time.</p>
+                                                </div>
+                                            </a></div>
+                                    </div><div class="px-2 | lg:px-3 | xl:px-4 w-full | md:w-1/2 | lg:w-1/3 mb-16" x-show="blogCategory === 'all' || blogCategory === 'culture'">
+
+                                        <div class="w-full"><a href="/blog/"
+                                                class="flex flex-col items-start group || js-cursor-trigger-drag">
+                                                <div class="w-full relative mb-5">
+                                                    <div
+                                                        class="w-full relative overflow-hidden rounded-bl-xl mb-3 pl-px | lg:rounded-bl-2xl">
+                                                        <div
+                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform duration-400 transform pt-2 pr-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
+                                                            <svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px left-0 transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg><svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg>
+                                                            <div
+                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | dark:bg-grayDark-400 | lg:w-16 lg:h-16 | lg:rounded-2xl">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 100%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/buttonicon2.jpg"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw" alt="Andy ALDTAN"
+                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
+                                                                            loading="lazy" width="200" height="200">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
+                                                            <div
+                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 56.25%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/Blog/boutcol4.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/Blog/boutcol4.jpg"
+                                                                            srcset="/assets/images/Blog/boutcol4.webp"
+                                                                            sizes="100vw"
+                                                                            alt="3d printer S on a desk beside some plants"
+                                                                            class=" w-full  " loading="lazy" width="800"
+                                                                            height="450">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inline-flex items-center space-x-2 mb-1 ">
+                                                    <div
+                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
+                                                    </div>
+                                                    <div
+                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
+                                                        4 min read</div>
+                                                </div>
+                                                <div class="
+text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
+font-sans-primary tracking-tight
+text-gray-600  | dark:text-grayDark-100
+leading-tighter
+text-pretty
+pr-8 mb-5 | lg:pr-16
+">Why our company outside of Colombo?</div>
+                                                <div
+                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
+                                                    <p>
+                                                        Our company operates outside of Colombo because, at this stage,
+                                                        we focus more on the quality of work and project delivery rather
+                                                        than physical location.</p>
+                                                </div>
+                                            </a></div>
+                                    </div><div class="px-2 | lg:px-3 | xl:px-4 w-full | md:w-1/2 | lg:w-1/3 mb-16" x-show="blogCategory === 'all' || blogCategory === 'marketing'">
+
+                                        <div class="w-full"><a href="/blog/"
+                                                class="flex flex-col items-start group || js-cursor-trigger-drag">
+                                                <div class="w-full relative mb-5">
+                                                    <div
+                                                        class="w-full relative overflow-hidden rounded-bl-xl mb-3 pl-px | lg:rounded-bl-2xl">
+                                                        <div
+                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform duration-400 transform pt-2 pr-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
+                                                            <svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px left-0 transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg><svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg>
+                                                            <div
+                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | dark:bg-grayDark-400 | lg:w-16 lg:h-16 | lg:rounded-2xl">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 100%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/buttonicon2.jpg"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw" alt="Andy ALDTAN"
+                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
+                                                                            loading="lazy" width="200" height="200">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
+                                                            <div
+                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 56.25%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/Blog/btyppeofcs5.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/Blog/btyppeofcs5.jpg"
+                                                                            srcset="/assets/images/Blog/boutcol4.webp"
+                                                                            sizes="100vw" alt="DSC08632 low"
+                                                                            class=" w-full  " loading="lazy" width="800"
+                                                                            height="450">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inline-flex items-center space-x-2 mb-1 ">
+                                                    <div
+                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
+                                                    </div>
+                                                    <div
+                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
+                                                        6 min read</div>
+                                                </div>
+                                                <div class="
+text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
+font-sans-primary tracking-tight
+text-gray-600  | dark:text-grayDark-100
+leading-tighter
+text-pretty
+pr-8 mb-5 | lg:pr-16
+">Types of clients we want to work with</div>
+                                                <div
+                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
+                                                    <p>
+                                                        Here at ALDTAN in Kalutara, we want to creates customized
+                                                        software
+                                                        Solutions. Here&#039;s a list of the types of clients we
+                                                        want to work with.</p>
+                                                </div>
+                                            </a></div>
+                                    </div><div class="px-2 | lg:px-3 | xl:px-4 w-full | md:w-1/2 | lg:w-1/3 mb-16" x-show="blogCategory === 'all' || blogCategory === 'news'">
+
+                                        <div class="w-full"><a href="/blog/"
+                                                class="flex flex-col items-start group || js-cursor-trigger-drag">
+                                                <div class="w-full relative mb-5">
+                                                    <div
+                                                        class="w-full relative overflow-hidden rounded-bl-xl mb-3 pl-px | lg:rounded-bl-2xl">
+                                                        <div
+                                                            class="absolute bottom-0 left-0 z-20 bg-white rounded-tr-2xl flex transition-transform duration-400 transform pt-2 pr-2 | lg:pr-3 lg:pt-3 | xl:translate-y-full xl:-translate-x-full lg:rounded-tr-3xl | xl:group-hover:translate-x-0 xl:group-hover:translate-y-0 | dark:bg-grayDark-600">
+                                                            <svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute top-px left-0 transform -translate-y-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg><svg id="Layer_1"
+                                                                class="w-10 h-10 | lg:w-12 lg:h-12 text-white fill-current absolute -bottom-px right-px transform translate-x-full rotate-180 dark:text-grayDark-600"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
+                                                                y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path
+                                                                    d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z" />
+                                                            </svg>
+                                                            <div
+                                                                class="rounded-xl transform-gpu overflow-hidden relative w-12 h-12 bg-gray-50 | dark:bg-grayDark-400 | lg:w-16 lg:h-16 | lg:rounded-2xl">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 100%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/buttonicon2.jpg"
+                                                                            srcset="/assets/images/buttonicon2.jpg"
+                                                                            sizes="100vw" alt="Ellaprofikle"
+                                                                            class=" w-full   w-full h-full object-cover absolute top-0 left-0"
+                                                                            loading="lazy" width="200" height="200">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="w-full relative z-10 transform-gpu rounded-2xl overflow-hidden bg-gray-50 | dark:bg-grayDark-400 | lg:rounded-3xl">
+                                                            <div
+                                                                class="w-full transform scale-110 transition-transform | xl:group-hover:-translate-y-2.5">
+                                                                <div class="relative overflow-hidden w-full"
+                                                                    style="padding-top: 56.25%;">
+                                                                    <picture
+                                                                        class="w-full absolute top-0 left-0 w-full h-full ">
+                                                                        <source type="image/webp"
+                                                                            srcset="/assets/images/Blog/bbestteam6.jpg"
+                                                                            sizes="100vw">
+                                                                        <img src="/assets/images/Blog/bbestteam6.jpg"
+                                                                            srcset="/assets/images/Blog/bbestteam6.webp"
+                                                                            sizes="100vw"
+                                                                            alt="Mike and Tom share a joke during a game of cards"
+                                                                            class=" w-full  " loading="lazy" width="800"
+                                                                            height="450">
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inline-flex items-center space-x-2 mb-1 ">
+                                                    <div
+                                                        class="bg-gray-600 | dark:bg-grayDark-200 w-1.5 h-1.5 rounded-full">
+                                                    </div>
+                                                    <div
+                                                        class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-200">
+                                                        4 min read</div>
+                                                </div>
+                                                <div class="
+text-lg | md:text-xl | xl:text-1xl | 4xl:text-2xl
+font-sans-primary tracking-tight
+text-gray-600  | dark:text-grayDark-100
+leading-tighter
+text-pretty
+pr-8 mb-5 | lg:pr-16
+">Why we always haddled Comprehensive projects</div>
+                                                <div
+                                                    class="font-light line-clamp-2 text-balance text-base | lg:text-md | dark:text-grayDark-200">
+                                                    <p>
+                                                        We always handled comprehensive projects because we focus on
+                                                        delivering complete, end-to-end solutions rather than partial or
+                                                        isolated components.</p>
+                                                </div>
+                                            </a></div>
+                                    
+</div>
+</div>
+</div>
+
                     </div>
+</div>
+<!-- BLOG_CONTENT_END -->
                 </div>
             </div>
         </div>
-    </div>
-    <footer
+    </main>
+
+    ﻿    <footer
         class="w-full p-4 -mt-4 rounded-t-2xl | lg:rounded-t-3xl lg:p-6 lg:-mt-6 | xl:p-10 xl:-mt-10 bg-white | dark:bg-grayDark-600 || js-footer">
         <div
             class="w-full relative bg-gray-600 rounded-bl-2xl rounded-tr-2xl pt-3 pb-16 overflow-hidden | lg:rounded-tr-none lg:pb-10 lg:pt-16 lg:rounded-b-3xl | dark:bg-grayDark-500">
@@ -1566,38 +1335,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     </div>
                 </div>
                 <div class="relative z-20">
-                    <div class="flex flex-col items-start space-y-1.5"><a
-                            href="https://www.linkedin.com/company/aldtan-private-limited/" target="_blank"
-                            rel="noreferrer"
-                            class="inline-flex items-center justify-center bg-primary-600 text-white translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                            <div class="sr-only">ALDTAN</div><svg class="w-3.5 h-3.5 fill-current"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                            </svg>
-                        </a><a href="https://www.youtube.com/@ALDTANPrivateLimited" target="_blank" rel="noreferrer"
-                            class="inline-flex items-center justify-center bg-primary-600 text-white translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                            <div class="sr-only">ALDTAN</div><svg class="w-3.5 h-3.5 fill-current"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                <path
-                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.322 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
-                            </svg>
-                        </a><a href="https://www.facebook.com/profile.php?id=61550727777896" target="_blank"
-                            rel="noreferrer"
-                            class="inline-flex items-center justify-center bg-primary-600 text-white translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400">
-                            <div class="sr-only">ALDTAN</div><svg class="w-3.5 h-3.5 fill-current"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path
-                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-                            </svg>
-                        </a><span
-                            class="inline-flex items-center justify-center bg-primary-600 text-white translate-z-0 rounded-full w-8 h-8 cursor-default">
-                            <div class="sr-only">ALDTAN</div><svg class="w-3.5 h-3.5 fill-current"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                            </svg>
-                        </span></div>
+                    <div class="flex flex-col items-start space-y-1.5"><a href="https://www.linkedin.com/company/aldtan-private-limited/" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center bg-primary-600 text-white translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400"><div class="sr-only">ALDTAN</div><svg class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a><a href="https://www.youtube.com/@ALDTANPrivateLimited" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center bg-primary-600 text-white translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400"><div class="sr-only">ALDTAN</div><svg class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.322 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61550727777896" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center bg-primary-600 text-white translate-z-0 rounded-full w-8 h-8 duration-400 | xl:hover:bg-gray-600 xl:hover:text-white | lg:dark:hover:bg-grayDark-400"><div class="sr-only">ALDTAN</div><svg class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a><span class="inline-flex items-center justify-center bg-primary-600 text-white translate-z-0 rounded-full w-8 h-8 cursor-default"><div class="sr-only">ALDTAN</div><svg class="w-3.5 h-3.5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></span></div>
                 </div>
             </div>
             <div
@@ -1631,9 +1369,9 @@ bg-primary-600 text-gray-600 py-2 px-5">
 window.scrollTo({ top: 0, behavior: 'smooth' });
 ">
                     <div class="text-xs | lg:text-base">
-                        Sh*t I’ve gone too far, send me back up</div>
+                        Sh*t Iâ€™ve gone too far, send me back up</div>
                     <div class=" animate-bounce">
-                        👆</div>
+                        ðŸ‘†</div>
                 </a>
             </div>
             <div
@@ -1665,7 +1403,7 @@ max-w-1xs mb-5 pr-10 | lg:max-w-xs | xl:h-auto | 4xl:max-w-sm
                                     </filter>
                                 </defs>
                             </svg>
-                            <a href="/contact.html"
+                            <a href="/contact"
                                 class="inline-flex relative group outline-none  | focus:outline-none "
                                 style="filter: url(#buttonFilter);">
                                 <div class="
@@ -1728,10 +1466,9 @@ bg-primary-600 text-white flex-shrink-0 py-2 px-5">
                                 <div class="relative overflow-hidden w-full" style="padding-top: 34.25%;">
                                     <picture class="w-full absolute top-0 left-0 w-full h-full ">
                                         <source type="image/webp" srcset="/assets/images/team-member.png" sizes="100vw">
-                                        <img src="/assets/images/team-member.png"
-                                            srcset="/assets/images/team-member.png" sizes="100vw"
-                                            alt="Google Review Badge White" class=" w-full  " loading="lazy" width="400"
-                                            height="137">
+                                        <img src="/assets/images/team-member.png" srcset="/assets/images/team-member.png"
+                                            sizes="100vw" alt="Google Review Badge White" class=" w-full  "
+                                            loading="lazy" width="400" height="137">
                                     </picture>
                                 </div>
                             </div>
@@ -1743,7 +1480,7 @@ bg-primary-600 text-white flex-shrink-0 py-2 px-5">
                         Learn</div>
                     <ul class="space-y-1">
                         <li class="flex items-center space-x-2">
-                            <a href="/about.html"
+                            <a href="/about"
                                 class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                                 About
                             </a>
@@ -1767,13 +1504,13 @@ bg-primary-600 text-white flex-shrink-0 py-2 px-5">
                             </a>
                         </li>
                         <li class="flex items-center space-x-2">
-                            <a href="/work.html"
+                            <a href="/work"
                                 class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                                 Work
                             </a>
                         </li>
                         <li class="flex items-center space-x-2">
-                            <a href="/contact.html"
+                            <a href="/contact"
                                 class="text-white relative link text-sm | md:text-base |  | dark:text-gray-200 lg:dark:hover:text-gray-100 || group">
                                 Contact
                             </a>
@@ -1839,7 +1576,7 @@ bg-primary-600 text-white flex-shrink-0 py-2 px-5">
                     <div
                         class="inline-flex flex-row text-gray-200 w-auto text-1xs | md:text-xs | lg:text-sm | dark:text-grayDark-200">
                         <div>
-                            © ALDTAN (PVT) Ltd 2026</div>
+                            Â© ALDTAN (PVT) Ltd 2026</div>
                         <div class="mx-2 | lg:mx-5">
                             |</div>
                         <div>
@@ -1867,132 +1604,35 @@ bg-primary-600 text-white flex-shrink-0 py-2 px-5">
             </div>
         </div>
     </footer>
-    </footer>
-    <script src="/assets/js/app.js" defer></script>
-    <script
-        type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CreativeWork","author":{"@id":"/#identity"},"copyrightHolder":{"@id":"/#identity"},"copyrightYear":"2024","creator":{"@id":"/#creator"},"dateModified":"2026-02-28","description":"A leading Software Development Company specializing in Engineering Solutions, Web Development, Mobile Apps, Cloud Infrastructure, and Digital Transformation.","headline":"Software Development Company | Engineering Solutions | ALDTAN","image":{"@type":"ImageObject","url":"assets/images/aldtan-og-image.png"},"inLanguage":"en","mainEntityOfPage":"/","name":"Software Development Company | Engineering Solutions | ALDTAN","publisher":{"@id":"/#creator"},"url":"/"},{"@id":"/#identity","@type":"ProfessionalService","alternateName":"ALDTAN","description":"A leading Software Development Company specializing in Engineering Solutions, Web Development, Mobile Apps, Cloud Infrastructure, and Digital Transformation.","name":"ALDTAN","url":"/"},{"@id":"/#creator","@type":"ProfessionalService","alternateName":"ALDTAN","description":"A leading Software Development Company offering world-class engineering solutions and digital transformation services.","name":"ALDTAN","url":"/"},{"@type":"BreadcrumbList","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","item":"/","name":"Home","position":1}],"name":"Breadcrumbs"}]}</script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script>window.SERVD_CSRF_TOKEN_NAME = "CRAFT_CSRF_TOKEN";
-        function injectCSRF() {
-            var inputs = document.getElementsByName(window.SERVD_CSRF_TOKEN_NAME);
-            var len = inputs.length;
-            if (len > 0) {
-                var xhr = new XMLHttpRequest();
-                xhr.onload = function () {
-                    if (xhr.status >= 200 && xhr.status <= 299) {
-                        var tokenInfo = JSON.parse(this.responseText);
-                        window.csrfTokenValue = tokenInfo.token;
-                        window.csrfTokenName = tokenInfo.name;
-                        for (var i = 0; i < len; i++) {
-                            inputs[i].setAttribute("value", tokenInfo.token);
-                        }
-                        window.dispatchEvent(new CustomEvent("servd.csrfloaded", { detail: { token: tokenInfo.token } }));
-                    } else {
-                        window.dispatchEvent(new CustomEvent("servd.csrffailed"));
-                    }
 
-                };
-                xhr.open("GET", "/index.php/actions/servd-asset-storage/csrf-token/get-token/");
-                xhr.send();
-            }
-        }
-        setTimeout(function () {
-            if (!window.SERVD_MANUAL_CSRF_LOAD) {
-                injectCSRF();
-            }
-        }, 50);
+
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script>
         document.addEventListener('alpine:init', () => {
-            Alpine.data('cursor', () => ({
-                icon: 'arrow-up-right',
-                x: 0,
-                y: 0,
-                endX: (window.innerWidth / 2),
-                endY: (window.innerHeight / 2),
-                cursorVisible: true,
-                cursorEnlarged: false,
-                cursorHovering: false,
-                cursorDragging: false,
-                cursor: document.querySelector('.js-cursor'),
-                dragCursor: document.querySelector('.js-cursor-drag'),
-                init() {
-
-                    _self = this;
-
-                    _self.dotSize = _self.cursor.offsetWidth;
-
-                    _self.setupEventListeners();
-
-                },
-                setupEventListeners() {
-
-                    _self = this;
-
-                    // Drag
-
-                    document.querySelectorAll('.js-cursor-trigger-drag').forEach((element) => {
-
-                        element.addEventListener('mouseover', function () {
-
-                            var icon = element.getAttribute('data-icon');
-
-                            if (icon) {
-                                _self.icon = icon;
-                            } else {
-                                _self.icon = 'arrow-up-right';
-                            }
-
-                            _self.cursorDragging = true;
-                            _self.cursorEnlarged = true;
-
-                            _self.toggleCursorDrag();
-
-                        });
-
-                        element.addEventListener('mouseout', function () {
-
-                            _self.cursorDragging = false;
-                            _self.cursorEnlarged = false;
-
-                            _self.toggleCursorDrag();
-
-                        });
-
+            Alpine.data('app', () => ({
+                viewportHeight: null,
+                gaEvents() {
+                    document.querySelectorAll('a[href^="mailto"]').forEach(element => {
+                        element.addEventListener('click', (event) => {
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({'event': 'email_lead'});
+                        })
                     });
-
-                    // Position
-
-                    document.addEventListener('pointermove', function (event) {
-
-                        _self.endX = event.clientX;
-                        _self.endY = event.clientY;
-
-                        _self.cursor.style.top = _self.endY + 'px';
-                        _self.cursor.style.left = _self.endX + 'px';
-
-                    });
-
                 },
-                toggleCursorDrag() {
-
-                    _self = this;
-
-                    if (_self.cursorDragging) {
-
-                        _self.dragCursor.classList.remove('scale-0');
-                        // _self.cursor.classList.remove('opacity-0');
-                        document.body.classList.add('no-cursor');
-
-                    } else {
-
-                        _self.dragCursor.classList.add('scale-0');
-                        // _self.cursor.classList.add('opacity-0');
-                        document.body.classList.remove('no-cursor');
-
+                baseInit() {
+                    viewportHeight = window.innerHeight * 0.01;
+                    document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
+                    const darkMode = Cookies.get('darkMode');
+                    if (darkMode == 'true') {
+                        document.querySelector('html').classList.add('dark');
                     }
-
-                },
+                }
             }))
         });
+    
         document.addEventListener('alpine:init', () => {
             Alpine.data('modal423709', () => ({
                 visible: false,
@@ -2413,195 +2053,10 @@ bg-primary-600 text-white flex-shrink-0 py-2 px-5">
                 }
             }))
         });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('workListings', () => ({
-                grid(id) {
+    </script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="/assets/js/app.js"></script>
 
-                    const grid = document.querySelector(`.js-grid-${id}`);
-                    const gridItems = document.querySelectorAll(`.js-grid-item-${id}`);
-
-                    const pckry = new Packery(grid, {
-                        itemSelector: '.js-grid-item-' + id,
-                        percentPosition: true
-                    });
-
-                    // Fix for gifs not loading properly and breaking the grid
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('ticker', () => ({
-                carousels(id, speed) {
-
-                    const carousels = document.querySelectorAll(`.js-carousel-${id}`);
-                    const mediaQuery = window.matchMedia('(max-width: 768px)');
-
-                    if (mediaQuery.matches) {
-                        speed = speed / 1.5;
-                    }
-
-                    carousels.forEach((carousel, index) => {
-
-                        const parentSelector = carousel;
-                        const clone = parentSelector.innerHTML;
-
-                        const firstElement = parentSelector.children[0];
-                        const lastElement = parentSelector.children[parentSelector.children.length - 1];
-
-                        let i = 0;
-
-                        if (index % 2 === 0) {
-
-                            this.animateCarousel('beforeend', 'left', firstElement, clone, parentSelector, i, speed);
-
-                        } else {
-
-                            this.animateCarousel('afterbegin', 'right', lastElement, clone, parentSelector, i, speed);
-
-                        }
-
-                    });
-
-                },
-                animateCarousel(position, margin, element, clone, parentSelector, i, speed) {
-
-                    parentSelector.insertAdjacentHTML(position, clone);
-                    parentSelector.insertAdjacentHTML(position, clone);
-
-                    setInterval(function () {
-
-                        margin === 'left' ?
-                            element.style.marginLeft = `-${i}px` :
-                            element.style.marginRight = `-${i}px`;
-
-
-                        if (i > element.clientWidth) {
-                            i = 0;
-                        }
-
-                        i = i + speed;
-
-                    }, 0);
-
-                }
-            }));
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('scatteredImages', () => ({
-                parallax(id) {
-
-                    const parallaxY = document.querySelectorAll('.js-parallax-y-' + id);
-
-                    parallaxY.forEach((item, index) => {
-
-                        let yPercent = item.dataset.yPercent;
-
-                        gsap.to(item, {
-                            scrollTrigger: {
-                                trigger: item,
-                                scrub: true,
-                                start: 'top bottom',
-                                end: 'bottom top',
-                            },
-                            yPercent: yPercent,
-                            ease: 'none',
-                        });
-
-                    });
-
-                },
-                mouseMove(id) {
-
-                    const mouseMove = document.querySelectorAll('.js-mouse-move-' + id)
-                    const mouseMoveReverse = document.querySelectorAll('.js-mouse-move--reverse-' + id)
-
-                    mouseMove.forEach(element => {
-
-                        gsap.to(element, {
-                            x: (event.clientX - window.innerWidth / 2) / 100,
-                            y: (event.clientY - window.innerHeight / 2) / 100,
-                            ease: 'none',
-                        });
-
-                    });
-
-                    mouseMoveReverse.forEach(element => {
-
-                        gsap.to(element, {
-                            x: (event.clientX - window.innerWidth / 2) / -100,
-                            y: (event.clientY - window.innerHeight / 2) / -100,
-                            ease: 'none',
-                        });
-
-                    });
-
-                }
-            }))
-        });
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('app', () => ({
-                viewportHeight: null,
-                gaEvents() {
-
-                    document.querySelectorAll('a[href^="mailto"]')
-                        .forEach(element => {
-
-                            element.addEventListener('click', (event) => {
-                                window.dataLayer = window.dataLayer || [];
-                                window.dataLayer.push({
-                                    'event': 'email_lead'
-                                });
-                            })
-
-                        });
-
-                    document.querySelectorAll('a[href^="tel:"]')
-                        .forEach(element => {
-
-                            element.addEventListener('click', (event) => {
-                                window.dataLayer = window.dataLayer || [];
-                                window.dataLayer.push({
-                                    'event': 'phone_lead'
-                                });
-                            })
-
-                        });
-
-                    document.querySelectorAll('.js-social-link')
-                        .forEach(element => {
-
-                            element.addEventListener('click', (event) => {
-                                window.dataLayer = window.dataLayer || [];
-                                window.dataLayer.push({
-                                    'event': 'social_links'
-                                });
-                            })
-
-                        });
-
-
-
-
-
-
-                },
-                baseInit() {
-
-                    viewportHeight = window.innerHeight * 0.01;
-                    document.documentElement.style.setProperty('--vh', `${viewportHeight}px`);
-
-                    const darkMode = Cookies.get('darkMode');
-
-                    if (darkMode == 'true') {
-                        document.querySelector('html').classList.add('dark');
-                    }
-
-
-                }
-            }))
-        });</script>
-    <script src="/assets/js/app.js" defer></script>
 </body>
 
-</html><!-- Cached by Blitz on 2026-02-28T02:18:30+00:00 --><!-- Served by Blitz on 2026-02-28T02:20:51+00:00 -->
+</html>
