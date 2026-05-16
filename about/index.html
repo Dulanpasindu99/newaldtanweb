@@ -45,44 +45,16 @@
             color: white !important;
         }
 
-        /* Department glass card */
-        .dept-card {
-            background: rgba(255, 255, 255, 0.45);
-            backdrop-filter: blur(18px) saturate(150%);
-            -webkit-backdrop-filter: blur(18px) saturate(150%);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            box-shadow:
-                0 8px 32px rgba(0, 105, 112, 0.12),
-                0 0 60px rgba(0, 105, 112, 0.08),
-                inset 0 1px 0 rgba(255, 255, 255, 0.7);
-            transition: box-shadow 0.4s ease, transform 0.4s ease, border-color 0.4s ease;
+        /* Department card scroll-in animation */
+        @keyframes deptCardIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
-
-        .dept-card:hover {
-            box-shadow:
-                0 12px 40px rgba(0, 105, 112, 0.22),
-                0 0 80px rgba(0, 105, 112, 0.18),
-                inset 0 1px 0 rgba(255, 255, 255, 0.8);
-            border-color: rgba(0, 105, 112, 0.35);
-            transform: translateY(-2px);
+        .dept-card { opacity: 0; }
+        .dept-card.is-visible {
+            animation: deptCardIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
-
-        .dark .dept-card {
-            background: rgba(30, 31, 35, 0.45);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow:
-                0 8px 32px rgba(0, 105, 112, 0.18),
-                0 0 60px rgba(0, 105, 112, 0.12),
-                inset 0 1px 0 rgba(255, 255, 255, 0.06);
-        }
-
-        .dark .dept-card:hover {
-            box-shadow:
-                0 12px 40px rgba(0, 105, 112, 0.3),
-                0 0 90px rgba(0, 105, 112, 0.25),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            border-color: rgba(0, 105, 112, 0.5);
-        }
+        .dept-card.is-visible:nth-child(2) { animation-delay: 0.18s; }
     </style>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
@@ -1432,17 +1404,14 @@ bg-primary-600 text-gray-600 py-2 px-5">
         <div class="w-full pt-20 | lg:pt-24 | 2xl:pt-32 | 4xl:pt-40">
             <div class="px-2 | sm:px-6 | xl:px-12 | 2xl:px-20 | 3xl:px-40 | 4xl:px-60">
                 <!-- Departments Highlights Row -->
-                <div class="w-full pb-16 lg:pb-24 mb-16 lg:mb-24 border-b border-gray-200 dark:border-grayDark-400 relative overflow-hidden">
-                    <!-- Decorative gradient blobs for glass effect background -->
-                    <div class="pointer-events-none absolute -top-20 -left-10 w-80 h-80 rounded-full opacity-40 blur-3xl" style="background: radial-gradient(circle, #006970 0%, transparent 70%);"></div>
-                    <div class="pointer-events-none absolute -bottom-20 -right-10 w-96 h-96 rounded-full opacity-30 blur-3xl" style="background: radial-gradient(circle, #006970 0%, transparent 70%);"></div>
-                    <div class="inline-flex items-center space-x-2 w-auto mb-8 relative z-10">
+                <div class="w-full pb-16 lg:pb-24 mb-16 lg:mb-24 border-b border-gray-200 dark:border-grayDark-400">
+                    <div class="inline-flex items-center space-x-2 w-auto mb-8">
                         <div class="bg-gray-600 | dark:bg-grayDark-100 w-1.5 h-1.5 rounded-full"></div>
                         <div class="font-light text-sm | lg:text-base text-gray-600 | dark:text-grayDark-100">
                             Our departments</div>
                     </div>
-                    <div class="grid grid-cols-1 | lg:grid-cols-2 relative z-10" style="gap: 2.5rem;">
-                        <div class="dept-card relative flex flex-col p-6 rounded-2xl group | lg:p-8 lg:rounded-3xl">
+                    <div class="grid grid-cols-1 | lg:grid-cols-2" style="gap: 2.5rem;">
+                        <div class="dept-card relative flex flex-col p-6 rounded-2xl bg-gray-50 | lg:p-8 lg:rounded-3xl | dark:bg-grayDark-400 group transition-transform | xl:hover:-translate-y-1">
                             <div class="inline-flex items-center mb-4">
                                 <span class="inline-block bg-primary-600 text-white text-xs font-light tracking-widest uppercase px-3 py-1 rounded-full">Department 01</span>
                             </div>
@@ -1466,7 +1435,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                                     positive change in the world of technology.</p>
                             </div>
                         </div>
-                        <div class="dept-card relative flex flex-col p-6 rounded-2xl group | lg:p-8 lg:rounded-3xl">
+                        <div class="dept-card relative flex flex-col p-6 rounded-2xl bg-gray-50 | lg:p-8 lg:rounded-3xl | dark:bg-grayDark-400 group transition-transform | xl:hover:-translate-y-1">
                             <div class="inline-flex items-center mb-4">
                                 <span class="inline-block bg-primary-600 text-white text-xs font-light tracking-widest uppercase px-3 py-1 rounded-full">Department 02</span>
                             </div>
@@ -1493,7 +1462,7 @@ bg-primary-600 text-gray-600 py-2 px-5">
                     </div>
                 </div>
 
-                <div class="flex flex-wrap items-start justify-between relative z-10">
+                <div class="flex flex-wrap items-start justify-between">
                     <div
                         class="px-2 | lg:px-3 | xl:px-4 relative w-full flex flex-wrap mb-6 | lg:mb-0 lg:w-1/2">
                         <div class="order-2 | lg:order-1">
@@ -7631,6 +7600,20 @@ bg-primary-600 text-white flex-shrink-0 py-2 px-5">
             }))
         });</script>
     <script src="/assets/js/app.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var cards = document.querySelectorAll('.dept-card');
+            if (!cards.length) return;
+            var reveal = function (el) { el.classList.add('is-visible'); };
+            if (!('IntersectionObserver' in window)) { cards.forEach(reveal); return; }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) { reveal(entry.target); io.unobserve(entry.target); }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+            cards.forEach(function (c) { io.observe(c); });
+        });
+    </script>
 </body>
 
 </html><!-- Cached by Blitz on 2026-03-02T02:00:28+00:00 --><!-- Served by Blitz on 2026-03-02T02:00:29+00:00 -->
