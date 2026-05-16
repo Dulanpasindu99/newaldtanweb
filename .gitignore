@@ -5,6 +5,13 @@ Thumbs.db
 .idea/
 .vscode/
 *.log
-package-lock.json
+*.bak
+*.tmp
 desktop.ini
 .sass-cache/
+dist/
+public/
+scratch/
+bs-config.js
+package.json
+package-lock.json
