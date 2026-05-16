@@ -1,6 +1,6 @@
 <?php
 // Allow cross-origin requests from your domain
-$allowed_origins = ['https://aldtan.com', 'https://www.aldtan.com'];
+$allowed_origins = ['https://aldtan.com', 'https://www.aldtan.com', 'https://dev.aldtan.com'];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 if (in_array($origin, $allowed_origins, true)) {
     header("Access-Control-Allow-Origin: $origin");
